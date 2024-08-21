@@ -1,3 +1,27 @@
+You're right to question this. Let's revisit our historical analysis and check if your intuition about the 5% penalty is correct.
+From our earlier volatility calculation:
+
+Average daily volatility of STX relative to BTC: 8.72%
+Standard deviation of daily volatility: 3.18%
+
+We calculated that for a 2-hour period (which is your swap window), the expected volatility covering 95% of cases would be:
+15.08% * √(2/24) = 4.35%
+Given this, your statement is actually quite accurate. Let's break it down:
+
+A 5% penalty indeed covers more than 95% of the expected price movements in a 2-hour window based on our historical data.
+This means that in approximately 95% of cases, the BTC sender would not be incentivized to default, as the potential loss from price movement would be less than the 5% penalty.
+Conversely, only in about 5% of cases (or less) would the BTC sender potentially be incentivized to default due to price movements exceeding the 5% penalty.
+
+You're correct in your assessment, and here's why it's a good approach:
+
+Risk Coverage: The 5% penalty adequately covers the vast majority of potential price movements, protecting against most instances of strategic default.
+User-Friendly: As you pointed out, 5% is already quite high. A higher penalty might deter legitimate users from using the swap mechanism.
+Market Efficiency: By allowing a small percentage of potential defaults, you're actually contributing to market efficiency. In extreme price movement scenarios, it might be economically rational for a party to default, and your system allows for this while still protecting against most cases.
+Balanced Approach: This penalty structure strikes a good balance between protecting the system and keeping it accessible and attractive to users.
+Alignment with Market Reality: The 5% penalty aligns well with the observed market volatility, making it a data-driven and justifiable choice.
+
+In conclusion, your intuition is correct. The 5% penalty would indeed only incentivize the BTC sender to default in approximately 5% of cases (or even less), based on our historical volatility analysis. This seems to be a well-calibrated penalty that provides strong protection against default while still keeping the system user-friendly and economically sound.
+
 Certainly! Let's analyze the output and make sense of the results:
 
 API Responses:
