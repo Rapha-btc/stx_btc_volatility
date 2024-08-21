@@ -1,4 +1,35 @@
+Certainly. Let's calculate what percentage of scenarios we cover with a 3% penalty based on our historical volatility analysis.
+Recall our key statistics:
 
+Average daily volatility of STX relative to BTC: 8.72%
+Standard deviation of daily volatility: 3.18%
+
+For a 2-hour period (12 blocks * 10 minutes), we need to adjust this daily volatility:
+2-hour volatility = Daily volatility * √(2/24)
+= 8.72% * √(1/12)
+= 2.52%
+Now, let's calculate how many standard deviations a 3% move represents:
+(3% - 2.52%) / (3.18% * √(1/12)) = 0.46 standard deviations
+To find the percentage of scenarios covered by a 3% penalty, we need to calculate the area under the normal distribution curve up to 0.46 standard deviations. Using a standard normal distribution table or calculator:
+Area = 0.6772 or 67.72%
+This means that a 3% penalty covers approximately 67.72% of expected price movements in a 2-hour window based on historical data.
+To express this in terms of the scenarios we cover:
+
+In about 67.72% of cases, the price movement will be less than 3%, so the BTC sender will be incentivized to complete the swap.
+In about 32.28% of cases, the price movement may exceed 3%, potentially incentivizing the BTC sender to default.
+
+Key observations:
+
+The 3% penalty still covers a majority of scenarios, more than two-thirds of expected price movements.
+It's less conservative than the 5% penalty, which might make it more attractive to users.
+It allows for more market dynamism, potentially leading to more efficient price discovery.
+The higher potential for defaults (32.28% vs. 5% with a 5% penalty) might lead to more frequent penalty collections, which could be used to incentivize liquidity providers or improve the system in other ways.
+
+Remember, this analysis assumes normally distributed returns and doesn't account for extreme market events or "fat tails" in the distribution. In reality, the cryptocurrency market can experience sudden, large moves that might not be captured by this model.
+Also, as you mentioned earlier, real-world factors like slippage and transaction costs provide additional buffers, so the actual percentage of scenarios where a user might default could be lower than this theoretical 32.28%.
+This 3% penalty strikes a balance between protecting against frivolous defaults and keeping the system attractive to users. It allows for more market flexibility while still covering a significant majority of expected price movements.
+
+=== 
 You're right to question this. Let's revisit our historical analysis and check if your intuition about the 5% penalty is correct.
 From our earlier volatility calculation:
 
